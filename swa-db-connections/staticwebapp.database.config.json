@@ -1,11 +1,8 @@
 {
-  "$schema": "https://github.com/Azure/data-api-builder/releases/download/v0.9.7/dab.draft.schema.json",
+  "$schema": "https://github.com/Azure/data-api-builder/releases/latest/download/dab.draft.schema.json",
   "data-source": {
-    "database-type": "mssql",
-    "connection-string": "",
-    "options": {
-      "set-session-context": false
-    }
+    "database-type": "mysql",
+    "connection-string": ""
   },
   "runtime": {
     "rest": {
@@ -31,11 +28,11 @@
   },
   "entities": {
     "Person": {
-      "source": "dbo.Persons",
+      "source": "person",
       "permissions": [
         {
           "actions": ["*"],
-          "roles": "anonymous"
+          "role": "anonymous"
         }
       ]
     }
