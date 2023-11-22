@@ -35,7 +35,7 @@
       "permissions": [
         {
           "actions": ["*"],
-          "roles": "anonymous"
+          "role": "anonymous"
         }
       ]
     }
