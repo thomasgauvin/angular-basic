@@ -31,7 +31,7 @@
   },
   "entities": {
     "Person": {
-      "source": "dbo.Persons",
+      "source": "dbo.Person",
       "permissions": [
         {
           "actions": ["*"],
